@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+/* --------------------------------------------------------------------------
+   EcoFin — палитра. Тёмно-зелёный акцент на светлом фоне.
+   Тема одна (светлая), намеренно: демо-видео и скриншоты должны выглядеть
+   одинаково независимо от системных настроек зрителя.
+   Новые цвета добавлять сюда, а не хардкодить в компонентах.
+   -------------------------------------------------------------------------- */
+:root {
+  --background: #f6f8f6;
+  --foreground: #12211a;
+  --surface: #ffffff;
+  --border: #dde5df;
+  --muted: #5c6f65;
+
+  --brand-50: #f0f7f2;
+  --brand-100: #dcece1;
+  --brand-200: #bcd9c6;
+  --brand-300: #90bfa2;
+  --brand-400: #5f9e79;
+  --brand-500: #3f815b;
+  --brand-600: #2e6748;
+  --brand-700: #26523a;
+  --brand-800: #204230;
+  --brand-900: #1b3728;
+  --brand-950: #0d1e16;
+
+  /* индикаторы отклонения от бенчмарка */
+  --over: #b3402f;   /* потребление выше нормы */
+  --under: #2e6748;  /* ниже нормы */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+
+  --color-brand-50: var(--brand-50);
+  --color-brand-100: var(--brand-100);
+  --color-brand-200: var(--brand-200);
+  --color-brand-300: var(--brand-300);
+  --color-brand-400: var(--brand-400);
+  --color-brand-500: var(--brand-500);
+  --color-brand-600: var(--brand-600);
+  --color-brand-700: var(--brand-700);
+  --color-brand-800: var(--brand-800);
+  --color-brand-900: var(--brand-900);
+  --color-brand-950: var(--brand-950);
+
+  --color-over: var(--over);
+  --color-under: var(--under);
+
+  --font-sans: var(--font-app-sans);
+  --font-mono: var(--font-app-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-app-sans), system-ui, sans-serif;
+}
